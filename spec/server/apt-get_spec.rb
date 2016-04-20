@@ -5,6 +5,10 @@ describe 'apt-get' do
     it { should be_installed }
   end
 
+  describe package('tomcat7') do
+    it { should be_installed }
+  end
+
   describe package('wget') do
     it { should be_installed }
   end
