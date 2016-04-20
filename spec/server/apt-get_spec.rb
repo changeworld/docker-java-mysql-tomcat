@@ -9,6 +9,10 @@ describe 'apt-get' do
     it { should be_installed }
   end
 
+  describe package('mysql-server') do
+    it { should be_installed }
+  end
+
   describe package('wget') do
     it { should be_installed }
   end
