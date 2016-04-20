@@ -1,0 +1,11 @@
+require 'spec_helper'
+
+describe 'apt-get' do
+  describe package('openjdk-7-jdk') do
+    it { should be_installed }
+  end
+
+  describe package('wget') do
+    it { should be_installed }
+  end
+end
